@@ -11,11 +11,14 @@ export function App() {
 
   return (
     <>
-      <div className="h-screen w-screen">
+      <div className="h-screen w-screen grid grid-row-13 border-4">
         <Navbar />
-        <div className="h-full grid grid-cols-6 ">
+        <div className=" row-span-12">
+        <div className=" h-full grid grid-cols-6 ">
           <Sidebar />
           <Chat />
+        </div>
+
         </div>
       </div>
     </>
